@@ -1,7 +1,8 @@
 ---
 title: address registers
+layout: home
 parent: registers
-nav_order: 6
+nav_order: 7
 ---
 
 there are also 8 address registers, starting from a0, ending with a7. they can

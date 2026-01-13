@@ -1,5 +1,6 @@
 ---
 title: syntax
+layout: home
 nav_order: 2
 ---
 

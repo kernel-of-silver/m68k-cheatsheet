@@ -1,7 +1,8 @@
 ---
 title: data registers
+layout: home
 parent: registers
-nav_order: 5
+nav_order: 6
 ---
 
 # registers
