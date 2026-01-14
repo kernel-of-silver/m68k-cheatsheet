@@ -3,3 +3,7 @@ description: Guess!
 theme: just-the-docs
 
 url: https://kernel-of-silver.github.io/m68k-cheatsheet
+
+aux_links:
+  source: https://github.com/kernel-of-silver/m68k-cheatsheet
+  MarkeyJester's M68K Tutorial: https://mrjester.hapisan.com/04_MC68/

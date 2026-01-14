@@ -1,3 +1,9 @@
+---
+title: original file
+layout: home
+nav_order: 999
+---
+```
 # syntax
 
 most of the time, 68000 instructions will be formatted in this manner:
@@ -194,3 +200,4 @@ you *can* access odd addresses with a byte size though.
 	; above is invalid since you can't do byte size on address registers lol
 
 		or.b      #$80,$FFFE00 ; valid
+```
