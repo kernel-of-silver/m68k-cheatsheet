@@ -8,7 +8,7 @@ nav_order: 2
 
 Most of the time, 68000 instructions will be formatted in this manner:
 - Command: Self-explanatory, what to do.
-- Size: `.b` for byte (`F0`), `.w` for word (`F0F0`), `.l` for longword (`F0F0F0F0`)
+- Size:  `.b` for byte (`F0`), `.w` for word (`F0F0`), `.l` for longword (`F0F0F0F0`)
 - Source operand: The value to use or read from.
 - Destination operand: The value that is being manipulated.
 
@@ -23,6 +23,10 @@ There are some exceptions, the `swap` command does not use size or a source oper
 swap    d0
 ```
 
-Numbers that start with `$` are intepreted as memory addresses or offsets. Numbers that start with `#` are intepreted as immediate numbers.
+When doing any instruction, usually only the byte/word furthest to the right is manipulated.
 
-Immediate numbers are interpreted as decimal by default, adding `$` infront of `#` will interpret the immediate number as hexadecimal. (e.g. `#$20` is equal to `#32`) Adding `%` instead interprets it as binary. (e.g. `#%00100000` is equal to `#32`)
+Values that start with `$` are intepreted as memory addresses or offsets.
+
+Non-register source operands that start with `#` are intepreted as immediate numbers.
+
+Immediate numbers are interpreted as decimal by default, adding `$` infront of `#` will treat the immediate number as hexadecimal. (e.g. `#$20` is equal to `#32`) Adding `%` instead treats it as binary. (e.g. `#%00100000` is equal to `#32`)
