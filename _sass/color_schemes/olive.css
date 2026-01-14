@@ -1,4 +1,4 @@
-$color-scheme: dark;
+@import "./color_schemes/dark";
 $body-background-color: #271414;
 $body-heading-color: #dad4d4;
 $body-text-color: #dad4d4;
