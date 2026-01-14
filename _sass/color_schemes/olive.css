@@ -1,10 +1,13 @@
 @import "./color_schemes/dark";
-$body-background-color: #271414;
-$body-heading-color: #dad4d4;
-$body-text-color: #dad4d4;
-$link-color: #e46666;
-$nav-child-link-color: #e46666;
-$sidebar-color: #303020;
+
+$grey-dk-300: #271414;
+
+$body-background-color: $grey-dk-300;
+$body-heading-color: $grey-lt-000;
+$body-text-color: $grey-lt-300;
+$link-color: lighten($blue-000, 10%);
+$nav-child-link-color: $grey-dk-000;
+$sidebar-color: $grey-dk-300;
 $base-button-color: $grey-dk-250;
 $btn-primary-color: $blue-200;
 $code-background-color: #0d1117; // github-dark bg color
