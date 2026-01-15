@@ -5,14 +5,13 @@ parent: instructions
 nav_order: 106
 ---
 
-clr - clear destination
+`clr` - Clear destination operand.
 
-		clr.b    $FFFD02
+```
+move.l    #$EE1234AA,$00FFFD00  ; "$00FFFD00" contains "EE1234AA"
+clr.b     $00FFFD03             ; "$00FFFD00" contains "EE123400"
+clr.w     $00FFFD02             ; "$00FFFD00" contains "EE120000"
+clr.l     $00FFFD00             ; "$00FFFD00" contains "00000000"
+```
 
-if "FFFD02" contains "EF", it will now have "00".
-this just zeroes out a destination operand. this works with word and longword
-sizes like you'd expect. data registers work too.
-
-		clr.w    d0
-
-however, this won't work with address registers.
+This only works on data registers, not address registers.

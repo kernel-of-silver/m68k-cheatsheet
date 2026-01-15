@@ -4,4 +4,4 @@ layout: home
 nav_order: 5
 ---
 
-sample text
+The subpages under this page contain information about the Motorola 68000's registers.

@@ -3,6 +3,11 @@ title: original file
 layout: home
 nav_order: 999
 ---
+
+This is the original file that I've been writing to before moving onto this website. Beware that this is probably a bit incoherent or outright incorrect.
+
+The pages on this website are more coherent, better written, have more necessary info than this file.
+
 ```
 # syntax
 

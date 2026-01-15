@@ -5,9 +5,11 @@ parent: instructions
 nav_order: 104
 ---
 
-swap – swap register words
+`swap` – Swap register halves.
 
-		swap    d0
-	
-if "d0" started with "FFFF0095", it will now have "0095FFFF".
-this only works on data registers, not address registers.
+```
+move.l    #$1234FFFF,d0  ; "d0" contains "1234FFFF"
+swap      d0             ; "d0" contains "FFFF1234"
+```
+
+This only works on data registers, not address registers.

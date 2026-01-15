@@ -4,9 +4,9 @@ layout: home
 nav_order: 3
 ---
 
-# binary and sizes
+# Binary
 
-All memory can be reduced down to bits. A bit is either a 0 or a 1, off or on, false or true. You usually work with larger sizes though.
+All memory can be reduced down to binary bits. A bit is either a 0 or a 1, off or on, false or true. You usually work with larger sizes though.
 
 Nybbles contain 4 bits, bytes contain 8 bits, words contain 16 bits, and longwords contain 32 bits. It can be visualized like this:
 
@@ -18,7 +18,7 @@ Nybbles contain 4 bits, bytes contain 8 bits, words contain 16 bits, and longwor
 | word     | `0010 1100 1111 0101`                     | `2CF5`      |
 | longword | `0010 1100 1111 0101 1001 1101 0111 0110` | `2CF5 9D76` |
 
-Every hex character can also be represented by a nybble:
+Every hexadecimal character can also be represented by a nybble:
 
 | binary   | hex   |
 |:---------|:------|

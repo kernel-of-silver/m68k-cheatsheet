@@ -5,11 +5,13 @@ parent: instructions
 nav_order: 105
 ---
 
-exg – exchange registers
+`exg` – Exchange registers.
 
-		exg.l    d0,d1
+```
+move.l    #$1234FFFF,d0  ; "d0" contains "1234FFFF"
+move.l    #$DEADBEEF,d1  ; "d1" contains "DEADBEEF"
+exg.l     d0,d1          ; "d1" contains "1234FFFF", and "d0" contains "DEADBEEF"
+```
 
-if "d0" has "FFFF0095", and d1 has "DEADBEEF",
-"d0" will now contain what "d1" has, and vice versa with "d1".
-this works on address registers too.
-this only works with longword, word and byte exchange don't work.
+This only works with longword, word and byte sizes don't work.
+This works with data and address registers.

@@ -13,12 +13,15 @@ Most of the time, 68000 instructions will be formatted in this manner:
 - Destination operand: The value that is being manipulated.
 
 All of this comes together to make an instruction that reads like this:
+
 ```
 move.w    #$F1A1,$0010FFAF
 ```
+
 `move` is the command, `.w` is the size, `#$F1A1` is the source operand, and `$0010FFAF` is the destination operand.
 
 There are some exceptions, the `swap` command does not use size or a source operand.
+
 ```
 swap    d0
 ```

@@ -5,10 +5,12 @@ parent: instructions
 nav_order: 103
 ---
 
-sub - subtract data from source to destination
+`sub` - Subtract data from source to destination.
 
-		sub.b    $00090024,d0
+```
+move.l    #$FFFF0095,d0  ; "d0" contains "FFFF0095"
+sub.b     #$08,d0        ; "d0" contains "FFFF008D"
 
-assume $00090024 contains "08".
-if "d0" started with "FFFF0095", it will now have "FFFF008D".
-self-explanatory, works like add. "subi" exists for "subtract immediate" too.
+move.l    #$12340000,d0  ; "d0" contains "12340000"
+sub.b     #$08,d0        ; "d0" contains "123400F8"
+```
